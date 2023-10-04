@@ -1,0 +1,180 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#container{
+    width: 85%;
+}
+
+header{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #logo{
+    width: 10%;
+    margin: 0;
+    display:flex;
+    align-items:center;
+}
+
+header #logo img{
+    height: 85px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    }
+
+header #menu{
+    width: 70%;
+}
+
+header #menu ul{
+    list-style: none;
+    display: flex;
+}
+header #menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#hamburguer{
+    display: none;
+}
+
+#content{
+    display: flex;
+}
+
+#content #info{
+    width: 65%;
+}
+
+#content #barral{
+    width: 30%;
+    background-color: #9d9e94;
+    color: black;
+    padding: 20px;
+}
+
+#cards .card{
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+
+.card h3{
+    margin-bottom: 20px;
+}
+
+#content #info #banner img{
+    width: 100%;
+}
+
+#info #texts{
+    display: flex;
+    margin-top: 20px;
+}
+
+#texts h2{
+    width: 40%;
+    font-size: 45px;
+}
+
+#texts #descripcion{
+    width: 55%;
+}
+
+#descripcion p{
+    margin-bottom: 40px;
+}
+
+#descripcion input{
+    border: none;
+    padding: 15px 20px;
+    background-color: #f59d92;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+footer{
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+footer .tarjeta{
+    display: flex;
+}
+
+.tarjeta .infopie{
+    display: flex;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+
+.tarjeta .infopie img{
+    width: 20%;
+}
+
+.tarjeta .infopie .textos{
+    width: 75%;
+}
+
+@media (max-width:480px) {
+    header #menu{
+        position: absolute;
+        background-color: #9d9e94;
+        height: 1000px;
+        top: 0;
+        right: 0;
+
+    }
+    header #menu ul{
+        flex-direction: column;
+        text-align: left;
+        margin-top: 30px;
+    }
+    header #menu ul li {
+        margin: 20px 140px;
+    }
+#menu{
+    display:none;
+}
+    #hamburguer{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top: 10px;
+        right: 10px;
+    }
+    header{
+        margin-top: 10px;
+    }
+    #logo{
+        margin: 0;
+    }
+    #content{
+        flex-direction: column;
+    }
+    #content #info{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #barral{
+        width: 100%;
+    }
+    #info #texts{
+        flex-direction: column;
+    }
+    #texts h1{
+        width: 100%;
+    }
+    #text #descripcion{
+        width: 100%;
+    }
+
+}
